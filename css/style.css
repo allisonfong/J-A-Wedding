@@ -1,0 +1,35 @@
+.jumbotron h1 {
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.jumbotron {
+    background-image:url("../image/maps.jpg");
+    background-size:   cover;
+}
+
+.lead {
+    color: #FFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.container .carousel {
+  border-radius: 6px !important;
+}
+
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+    color: #3a8d2e;
+    background-color: #EEE;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+    color: #FFF;
+    background-color: #3a8d2e;
+}
+
+a {
+    color: #3a8d2e;
+}
