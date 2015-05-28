@@ -1,0 +1,6 @@
+indexes:
+- kind: RSVPModel
+  ancestor: yes
+  properties:
+  - name: date
+    direction: desc

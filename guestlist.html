@@ -1,0 +1,39 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><title>J & A Guestlist</title>
+    <link rel="SHORTCUT ICON" href="/e/ref.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body style="-webkit-text-size-adjust: none;margin: 0;padding: 0; font-family: 'Open Sans', sans-serif;">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <table class="table">
+        <thead>
+            <td>Date</td>
+            <td>RSVP</td>
+            <td>Name</td>
+            <td>Guest Count</td>
+        </thead>
+    {% for r in rsvps %}
+      <tr>
+          <td>{{r.date}}</td>
+          <td>{{r.rsvp}}</td>
+          <td>{{r.name}}</td>
+          <td>{{r.number}}</td>
+      </tr>
+
+      {% endfor %}
+
+	</table>
+</body>
+</html>
+
+
