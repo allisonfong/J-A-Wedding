@@ -3,6 +3,7 @@
 <html>
 <head><title>J & A Thanks</title>
     <link rel="SHORTCUT ICON" href="/e/ref.ico" />
+    <link rel="icon" href="image/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -73,15 +74,15 @@ h3 {
 	<!--FRAME-->
 	<table class="frame" width="591" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; text-align:left; background-image: url('image/triangle.png'); max-height: 420px;" align="center">
 		<tr>
-			<td style="text-align: center; padding: 0px 40px 0 40px;">
-                <h1>We're Engaged!</h1>
-                <h3>Join us for a picnic to celebrate!</h3>
+			<td style="text-align: center; padding: 40px 0 0 0;">
+                <img src="http://johnandallison.com/image/InviteHeader.png" alt="header">
+                <h2>Join us for a picnic to celebrate!</h2>
 			</td>
 		</tr>
 		<tr> <td style="text-align: center; padding: 40px 40px 40px 40px;">
 			<h3>Thanks for your response! <br><br>
             <small>
-                {% if rsvp == 'accept' %}
+                {% if rsvp != 'decline' %}
                 We can't wait to see you there!
                 {% else %}
                 Sorry you can't make it.
