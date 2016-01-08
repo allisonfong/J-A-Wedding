@@ -91,5 +91,5 @@ application = webapp2.WSGIApplication([
     ('/invite', Invite),
     ('/rsvp', RSVP),
     ('/rsvp/guestlist', Guestlist),
-    ('/thanks', Thanks)
+    ('/thanks', Thanks),
 ], debug=True)
