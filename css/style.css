@@ -2,9 +2,36 @@ form {
     margin: 50px 150px;
 }
 
+h1 {
+    font-weight: bold;
+}
+
 .proposal {
-    color: #000;
-    text-shadow: 0 2px 5px #585858;
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.accomodations {
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.venue {
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.contact {
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.accomodations a {
+    color: #808080;
+}
+
+.contact a {
+    color: #808080;
 }
 
 .container {
