@@ -16,6 +16,11 @@ h1 {
     text-shadow: none;
 }
 
+.airports {
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
 .venue {
     color: #A9A9A9;
     text-shadow: none;
@@ -27,6 +32,10 @@ h1 {
 }
 
 .accomodations a {
+    color: #808080;
+}
+
+.airports a {
     color: #808080;
 }
 
