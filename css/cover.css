@@ -41,10 +41,8 @@ body {
   height: 100%; /* For at least Firefox */
   min-height: 400px;
   background-image: url("../image/engagement/054U0079.jpg");
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 0%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);

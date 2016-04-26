@@ -20,20 +20,31 @@
         <thead>
             <td>Date</td>
             <td>RSVP</td>
-            <td>Name</td>
-            <td>Guest Count</td>
+            <td>Transportation</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Group</td>
+            <td>Email</td>
+            <td>Message</td>
         </thead>
     {% for r in rsvps %}
       <tr>
           <td>{{r.date}}</td>
           <td>{{r.rsvp}}</td>
-          <td>{{r.name}}</td>
-          <td>{{r.number}}</td>
+          <td>{{r.transportation}}</td>
+          <td>{{r.firstName}}</td>
+          <td>{{r.lastName}}</td>
+          <td>{{r.group}}</td>
+          <td>{{r.email}}</td>
+          <td>{{r.message}}</td>
       </tr>
 
       {% endfor %}
 
 	</table>
+    Total Count: {{total}}
+    Yes: {{yes}}
+    No: {{no}}
 </body>
 </html>
 

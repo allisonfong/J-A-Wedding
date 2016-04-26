@@ -1,7 +1,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head><title>J & A Thanks</title>
+<head><title>J & A RSVP</title>
     <link rel="SHORTCUT ICON" href="/e/ref.ico" />
     <link rel="icon" href="/image/heart.ico">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -19,16 +19,27 @@
 <style type="text/css">
 
 h1 {
-    font-size: 100px;
+    font-size: 85px;
     font-weight: normal;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Impact', 'Charcoal', sans-serif;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-weight: bold;
 }
 
+h2 {
+    font-weight: bold;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    padding: 5px;
+}
 
 @media all and (max-width: 600px){
 
@@ -70,35 +81,44 @@ h3 {
 
 </style>
 
-
 	<!--FRAME-->
     <div align="center" style="width: 480px; margin: auto;">
-    <table class="frame" style="width: 480px; border-collapse:collapse; margin-top:50px; margin-botton:50px; text-align:left; background-image: url('/image/wedding_rsvp_background.jpg'); background-repeat:  no-repeat; background-size: 100% 100%;" align="center">
+	<table class="frame" style="width: 480px; border-collapse:collapse; margin-top:50px; margin-botton:50px; text-align:left; background-image: url('/image/wedding_rsvp_background.jpg'); background-repeat: no-repeat; background-size: 100% 100%;" align="center">
 		<tr>
-			<td style="text-align: center; padding: 40px 0 40px 0;">
-                <h2>Thank you </br>for your response!</h2>
+			<td style="text-align: center; padding-top: 40px">
+                <h1><b>R S V P</b></h1>
+                <h5 style="padding: 0 26%;">WE WOULD LOVE FOR YOU TO BE A PART OF OUR BIG DAY!</h5>
 			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; padding: 0px 40px 0 40px;">
+                <h3>JUNE 11TH, 2016</h3>
+			</td>
+		</tr>
 
-        {% if rsvp == '1' %}
-        <tr> <td style="text-align: center; padding: 0px 75px 20px 75px;">
-            <h4>
-                We are overjoyed that you can join us for our big day!
-            </h4>
-		</td></tr>
-        {% endif %}
- 
-        <tr><td style="text-align: center; padding: 0px 75px 50px 75px;">
-            <h5>We will continue to update our website with more details as we get closer. If you need to edit any of your answers, visit the <a href="/rsvp">rsvp</a> page. Feel free to email us with any questions.</h5>
-            </br>
-            <h5><a href="/" style="color: #000;">www.johnandallison.com</a></h5>
-            <h5>wedding@johnandallison.com</h5>
-        </td></tr>
+		<tr>
+			<td>
+                <form id="rsvp-form" action="/rsvp" method="post">
+                  <label> Name: </label>
+                  <input type="text" name="first_name" size="14" placeholder="First Name" required/>
+                  <input type="text" name="last_name" size="14" placeholder="Last Name" required/>
+                  </br>
+                  <div colspan="2" align="center" style="padding-top: 20px">
+                  
+                  {% if error == 'NOT_FOUND' %}
+                    <p style="color:red; padding:10px 0px;">{{ message }}</p>
+                  {% endif %}
+                  <button type="submit" class="btn btn-default" form="rsvp-form" value="Search">Search</button>
+                  </div>
+                </form>
+            </td>
+		</tr>
 	</table>
 
     <div class="footer">
         <p>J & A Wedding</p>
     </div>
-</div>
+    </div>
 </body>
 </html>
 

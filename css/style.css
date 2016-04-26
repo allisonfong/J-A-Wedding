@@ -1,5 +1,5 @@
 form {
-    margin: 50px 150px;
+    margin: 50px 75px;
 }
 
 h1 {
@@ -21,6 +21,16 @@ h1 {
     text-shadow: none;
 }
 
+.registry {
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.transportation {
+    color: #A9A9A9;
+    text-shadow: none;
+} 
+
 .venue {
     color: #A9A9A9;
     text-shadow: none;
@@ -40,6 +50,14 @@ h1 {
 }
 
 .contact a {
+    color: #808080;
+}
+
+.registry a {
+    color: #808080;
+}
+
+.transportation a {
     color: #808080;
 }
 
