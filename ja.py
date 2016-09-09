@@ -151,19 +151,29 @@ class RSVP(webapp2.RequestHandler):
 class Guestlist(webapp2.RequestHandler):
     def get(self):
         rsvp_query = RSVPModel.query().order(RSVPModel.group)
-        rsvps = rsvp_query.fetch(200)
+        rsvps = rsvp_query.fetch(250)
 
         rsvp_query_yes = RSVPModel.query(RSVPModel.rsvp == 1)
-        rsvps_yes = rsvp_query_yes.fetch(200)
+        rsvps_yes = rsvp_query_yes.fetch(250)
 
         rsvp_query_no = RSVPModel.query(RSVPModel.rsvp == 0)
-        rsvps_no = rsvp_query_no.fetch(200)
+        rsvps_no = rsvp_query_no.fetch(250)
+
+	rsvp_query_none = RSVPModel.query(RSVPModel.rsvp == None)
+	rsvps_none = rsvp_query_none.fetch(250)
+
+	rsvp_query_transportation = RSVPModel.query(RSVPModel.transportation == 1)
+	rsvps_transportation = rsvp_query_transportation.fetch(250)
+
+	rsvp_none = len(rsvps)-len(rsvps_yes)-len(rsvps_no)
 
         template_values = {
             'rsvps': rsvps,
             'total': len(rsvps),
             'yes': len(rsvps_yes),
-            'no': len(rsvps_no)
+            'no': len(rsvps_no),
+	    'rsvps_none': len(rsvps_none),
+	    'transportation': len(rsvps_transportation)
         }
 
         template = JINJA_ENVIRONMENT.get_template('guestlist.html')
