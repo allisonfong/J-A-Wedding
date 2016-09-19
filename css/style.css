@@ -6,63 +6,14 @@ h1 {
     font-weight: bold;
 }
 
-.proposal {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.accomodations {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.airports {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.registry {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.transportation {
-    color: #A9A9A9;
-    text-shadow: none;
-} 
-
-.venue {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.contact {
-    color: #A9A9A9;
-    text-shadow: none;
-}
-
-.accomodations a {
-    color: #808080;
-}
-
-.airports a {
-    color: #808080;
-}
-
-.contact a {
-    color: #808080;
-}
-
-.registry a {
-    color: #808080;
-}
-
-.transportation a {
-    color: #808080;
-}
-
 .container {
     max-width: 700px;
+    color: #A9A9A9;
+    text-shadow: none;
+}
+
+.container a {
+    color: #808080;
 }
 
 p {
